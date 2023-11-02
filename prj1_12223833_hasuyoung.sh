@@ -112,7 +112,7 @@ do
 				cat movie_and_rating.info | sort -n > movie_and_rating_sorted.info
 				
 
-				for var in $(seq 1 1684); do
+				for var in $(seq 1 1682); do
     					cat movie_and_rating_sorted.info | awk -v var="$var" 'var==$1{ sum += $2
 													count++ }
 					END { if(count > 0){
